@@ -1,0 +1,218 @@
+[
+  {
+    "audio": "tests/data/pcm/16k_en.pcm",
+    "report": "tests/reports/16k_en.vad.html",
+    "sample_rate": 16000,
+    "duration": 12.16,
+    "speech_seconds": 11.830000000000004,
+    "speech_ratio": 0.9728618421052635,
+    "segments": [
+      {
+        "start": 0.01,
+        "end": 2.12,
+        "duration": 2.1100000000000003,
+        "confidence": 0.8726845979690552
+      },
+      {
+        "start": 2.28,
+        "end": 8.25,
+        "duration": 5.970000000000001,
+        "confidence": 0.906492292881012
+      },
+      {
+        "start": 8.32,
+        "end": 10.21,
+        "duration": 1.8900000000000006,
+        "confidence": 0.8414638042449951
+      },
+      {
+        "start": 10.27,
+        "end": 12.13,
+        "duration": 1.8600000000000012,
+        "confidence": 0.8472431898117065
+      }
+    ]
+  },
+  {
+    "audio": "tests/data/pcm/16k_jp.pcm",
+    "report": "tests/reports/16k_jp.vad.html",
+    "sample_rate": 16000,
+    "duration": 36.62,
+    "speech_seconds": 30.560000000000002,
+    "speech_ratio": 0.8345166575641727,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 1.01,
+        "duration": 1.01,
+        "confidence": 0.8659384250640869
+      },
+      {
+        "start": 1.05,
+        "end": 3.74,
+        "duration": 2.6900000000000004,
+        "confidence": 0.9163141846656799
+      },
+      {
+        "start": 4.62,
+        "end": 6.39,
+        "duration": 1.7699999999999996,
+        "confidence": 0.9070308208465576
+      },
+      {
+        "start": 6.71,
+        "end": 9.79,
+        "duration": 3.079999999999999,
+        "confidence": 0.9293715953826904
+      },
+      {
+        "start": 10.13,
+        "end": 11.92,
+        "duration": 1.7899999999999991,
+        "confidence": 0.9059323668479919
+      },
+      {
+        "start": 12.22,
+        "end": 13.64,
+        "duration": 1.42,
+        "confidence": 0.8623859286308289
+      },
+      {
+        "start": 14.65,
+        "end": 17.22,
+        "duration": 2.5699999999999985,
+        "confidence": 0.8841390609741211
+      },
+      {
+        "start": 17.67,
+        "end": 19.68,
+        "duration": 2.009999999999998,
+        "confidence": 0.9502395391464233
+      },
+      {
+        "start": 20.13,
+        "end": 21.91,
+        "duration": 1.7800000000000011,
+        "confidence": 0.9053221344947815
+      },
+      {
+        "start": 22.2,
+        "end": 24.98,
+        "duration": 2.780000000000001,
+        "confidence": 0.9408091306686401
+      },
+      {
+        "start": 25.34,
+        "end": 28.32,
+        "duration": 2.9800000000000004,
+        "confidence": 0.9486846327781677
+      },
+      {
+        "start": 28.93,
+        "end": 30.42,
+        "duration": 1.490000000000002,
+        "confidence": 0.8701815009117126
+      },
+      {
+        "start": 30.87,
+        "end": 33.2,
+        "duration": 2.330000000000002,
+        "confidence": 0.8576837778091431
+      },
+      {
+        "start": 33.54,
+        "end": 34.46,
+        "duration": 0.9200000000000017,
+        "confidence": 0.8313164114952087
+      },
+      {
+        "start": 34.67,
+        "end": 36.61,
+        "duration": 1.9399999999999977,
+        "confidence": 0.8380424976348877
+      }
+    ]
+  },
+  {
+    "audio": "tests/data/pcm/16k_zn.pcm",
+    "report": "tests/reports/16k_zn.vad.html",
+    "sample_rate": 16000,
+    "duration": 34.5,
+    "speech_seconds": 30.240000000000016,
+    "speech_ratio": 0.8765217391304353,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 2.55,
+        "duration": 2.55,
+        "confidence": 0.9261879324913025
+      },
+      {
+        "start": 3.03,
+        "end": 4.38,
+        "duration": 1.35,
+        "confidence": 0.7968656420707703
+      },
+      {
+        "start": 4.77,
+        "end": 10.46,
+        "duration": 5.690000000000001,
+        "confidence": 0.886584460735321
+      },
+      {
+        "start": 10.85,
+        "end": 14.63,
+        "duration": 3.780000000000001,
+        "confidence": 0.848700225353241
+      },
+      {
+        "start": 15.03,
+        "end": 18.35,
+        "duration": 3.320000000000002,
+        "confidence": 0.8839879631996155
+      },
+      {
+        "start": 19.1,
+        "end": 22.5,
+        "duration": 3.3999999999999986,
+        "confidence": 0.8977581262588501
+      },
+      {
+        "start": 23.0,
+        "end": 24.3,
+        "duration": 1.3000000000000007,
+        "confidence": 0.8820154666900635
+      },
+      {
+        "start": 24.62,
+        "end": 27.17,
+        "duration": 2.5500000000000007,
+        "confidence": 0.8651180863380432
+      },
+      {
+        "start": 27.59,
+        "end": 28.17,
+        "duration": 0.5800000000000018,
+        "confidence": 0.7329824566841125
+      },
+      {
+        "start": 28.31,
+        "end": 30.91,
+        "duration": 2.6000000000000014,
+        "confidence": 0.8898841738700867
+      },
+      {
+        "start": 31.31,
+        "end": 32.13,
+        "duration": 0.8200000000000038,
+        "confidence": 0.7511110901832581
+      },
+      {
+        "start": 32.19,
+        "end": 34.49,
+        "duration": 2.3000000000000043,
+        "confidence": 0.8720523715019226
+      }
+    ]
+  }
+]
