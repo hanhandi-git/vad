@@ -20,6 +20,8 @@ def read_audio(
         if sample_rate is None:
             raise ValueError("sample_rate is required for raw PCM files")
         return read_pcm(audio_path, sample_rate, sample_format=sample_format, channels=channels)
+    if audio_path.suffix.lower() in {".flac", ".ogg"}:
+        return read_sound_file(audio_path)
     raise ValueError(f"unsupported audio file extension: {audio_path.suffix}")
 
 
@@ -78,6 +80,22 @@ def read_pcm(
         usable = (len(audio) // channels) * channels
         audio = audio[:usable].reshape(-1, channels).mean(axis=1, dtype=np.float32)
     return np.ascontiguousarray(audio, dtype=np.float32), sample_rate
+
+
+def read_sound_file(path: str | Path) -> tuple[np.ndarray, int]:
+    try:
+        import soundfile as sf
+    except ImportError as exc:
+        raise ImportError(
+            "Reading FLAC/OGG requires the benchmark extra: uv sync --extra bench"
+        ) from exc
+
+    audio, sample_rate = sf.read(str(path), dtype="float32", always_2d=True)
+    if audio.shape[1] > 1:
+        mono = audio.mean(axis=1, dtype=np.float32)
+    else:
+        mono = audio[:, 0]
+    return np.ascontiguousarray(mono, dtype=np.float32), int(sample_rate)
 
 
 def _decode_pcm24(raw: bytes) -> np.ndarray:

@@ -1,5 +1,5 @@
 from .api import StreamingVoiceActivityDetector, VoiceActivityDetector, detect, detect_file
-from .io import read_audio, read_pcm, read_wav
+from .io import read_audio, read_pcm, read_sound_file, read_wav
 from .types import FrameAnalysis, Segment, StreamingVadEvent, VadConfig, VadResult
 
 __all__ = [
@@ -14,6 +14,7 @@ __all__ = [
     "detect_file",
     "read_audio",
     "read_pcm",
+    "read_sound_file",
     "read_wav",
 ]
 

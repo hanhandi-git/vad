@@ -8,7 +8,7 @@ from time import perf_counter
 
 import numpy as np
 
-from openvad import VadConfig, VoiceActivityDetector, read_wav
+from openvad import VadConfig, VoiceActivityDetector, read_audio
 
 
 @dataclass(frozen=True, slots=True)
@@ -106,7 +106,7 @@ def evaluate_items(items: list[ManifestItem], config: VadConfig) -> Metrics:
     audio_seconds = 0.0
     start_time = perf_counter()
     for item in items:
-        samples, sample_rate = read_wav(item.audio)
+        samples, sample_rate = read_audio(item.audio)
         result = detector.analyze(samples, sample_rate)
         expected = intervals_to_frames(
             item.segments,
