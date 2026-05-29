@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+from typing import Literal
 
 import numpy as np
 
@@ -36,6 +37,13 @@ class Segment:
     @property
     def duration(self) -> float:
         return self.end - self.start
+
+
+@dataclass(frozen=True, slots=True)
+class StreamingVadEvent:
+    kind: Literal["start_of_speech", "end_of_speech"]
+    time: float
+    segment: Segment | None = None
 
 
 @dataclass(frozen=True, slots=True)
